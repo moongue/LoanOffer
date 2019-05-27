@@ -1,0 +1,62 @@
+#banner {
+  padding-top: 170px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: $white-font;
+  @include sm(padding-top, 120px);
+  h1 {
+    font-size: 60px;
+    color: $white-font;
+    line-height: 1.33333;
+    font-weight: 500;
+    @include lg (font-size, 44px);
+    @include sm(font-size, 26px);
+
+  }
+  p {
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 1.43333;
+    @include md(font-size, 24px);
+    @include sm(font-size, 20px);
+    span {
+      color: $green;
+      font-weight: 600;
+    }
+    &.small {
+      margin-top: 60px;
+      font-size: 18px;
+      @include lg(margin-top, 40px);
+      @include md(margin-top, 20px);
+    }
+  }
+  .tel {
+    .row__aic {
+      justify-content: center;
+    }
+    a {
+      font-size: 30px;
+      line-height: 1.43333;
+      font-weight: 600;
+      margin-top: 5px;
+      @include lg(font-size, 24px);
+      @include sm(font-size, 20px);
+      img {
+        width: 30px;
+        height: 30px;
+        padding-right: 13px;
+      }
+    }
+  }
+  .btn-styles {
+    display: inline-block;
+  }
+  .offset-top {
+    margin-top: 45px;
+  }
+  .double-offset-top {
+    margin-top: 80px;
+    @include lg(margin-top, 45px);
+    @include md(margin-top, 25px)
+  }
+}

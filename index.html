@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="bg-banner">
+    <header id="header">
+        <div class="wrapper">
+            <div class="row__aic">
+                <div class="mobile-menu-toggle sm-show">
+                    <svg class="ham hamRotate ham-burger" viewBox="0 0 100 100" width="60"
+                         onclick="this.classList.toggle('active')">
+                        <path
+                                class="line top"
+                                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"/>
+                        <path
+                                class="line middle"
+                                d="m 30,50 h 40"/>
+                        <path
+                                class="line bottom"
+                                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"/>
+                    </svg>
+                </div>
+                <div class="logo sm-show">
+                    <a href="#"><img src="images/icon/logo-inverse-249x56.png" alt="Logo"></a>
+                </div>
+                <div class="logo sm-hide">
+                    <a href="#"><img src="images/icon/logo-249x56.png" alt="Logo"></a>
+                </div>
+                <nav id="dropdown-mob">
+                    <a href="#" class="btn-styles sm-show">Find my rate</a>
+                    <ul>
+                        <li><a href="#">Why Us</a></li>
+                        <li><a href="#">Steps</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li class="have-dropdown main-dropdown"><a href="#">Pages</a>
+                            <ul class="down-dropdown">
+                                <li class="have-dropdown first"><a href="#">Pages</a>
+                                    <ul>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                    </ul>
+                                </li>
+                                <li class="have-dropdown second"><a href="#">Pages</a>
+                                    <ul>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                    </ul>
+                                </li>
+                                <li class="have-dropdown third"><a href="#">Pages</a>
+                                    <ul>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                    </ul>
+                                </li>
+                                <li class="have-dropdown four"><a href="#">Pages</a>
+                                    <ul>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                    </ul>
+                                </li>
+                                <li class="have-dropdown fives"><a href="#">Pages</a>
+                                    <ul>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                    </ul>
+                                </li>
+                                <li class="have-dropdown six"><a href="#">Pages</a>
+                                    <ul>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                    </ul>
+                                </li>
+                                <li class="have-dropdown seven"><a href="#">Pages</a>
+                                    <ul>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Pages</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn-styles sm-hide">Find my rate</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="wrapper">
+            <h1>
+                Looking for Big Loans with<br class="sm-hide">
+                Low Interest Rate?
+            </h1>
+            <p>
+                Personal Loans at Fixed Rates from <span>5.95% APR</span> to <span>12.99% APR</span> (with AutoPay)
+            </p>
+            <a href="#" class="btn-styles sm-hide offset-top green">Find my rate</a>
+            <p class="double-offset-top">Call us for a Free Consultation at</p>
+            <div class="tel">
+                <a href="#" class="row__aic"><img src="images/icon/icon-tel.png" alt="Tel"> 855-456-7634</a>
+            </div>
+            <p class="small">Checking your rate will not affect your credit score.</p>
+        </div>
+    </section>
+</div>
+
+<div class="white-bg">
+    <section id="advantages">
+        <div class="wrapper">
+            <div class="row">
+                <div class="one-advantage">
+                    <img src="images/icon/advantage-1.png" alt="">
+                    <div class="title">
+                        Easy & Secure
+                    </div>
+                    <p>secure & confidential</p>
+                </div>
+                <div class="one-advantage">
+                    <img src="images/icon/advantage-2.png" alt="">
+                    <div class="title">
+                        Get Money in 1
+                    </div>
+                    <p>...hour. Or even faster!</p>
+                </div>
+                <div class="one-advantage">
+                    <img src="images/icon/advantage-3.png" alt="">
+                    <div class="title">
+                        Up to <span>$100k</span>
+                    </div>
+                    <p>in cash or a wired transfer!</p>
+                </div>
+                <div class="one-advantage">
+                    <img src="images/icon/advantage-4.png" alt="">
+                    <div class="title">
+                        Up to <span>3 YRS </span>
+                    </div>
+                    <p>36 months of low rates</p>
+                </div>
+                <div class="one-advantage">
+                    <img src="images/icon/advantage-5.png" alt="">
+                    <div class="title">
+                        Online
+                    </div>
+                    <p>no bank visit required!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section id="content">
+    <div class="wrapper">
+        <h2 class="line">Pay off Credit Cards or<br>
+            Invest in a Major Purchase</h2>
+        <p>
+            Are you paying more than 10% of interest on your credit cards? Our low interest rates will help you save
+            thousands of dollars in payments. With the lowest rates and a fixed monthly payment, you can pay off high
+            interest debt, like credit cards, or make a major purchase. It only takes minutes to apply.
+        </p>
+    </div>
+    <div class="bg-money">
+        <div class="wrapper">
+            <div class="block-right">
+                <div class="title">
+                    Stunning Repayment Flexibility<br>
+                    for Your Loan
+                </div>
+                <p class="line">
+                    Paying off your personal loans gets easy within our online dashboard.
+                </p>
+                <ul>
+                    <li><img src="images/icon/money-1.png" alt="">
+                        <p>Choose your preferred monthly payment</p>
+                    </li>
+                    <li><img src="images/icon/money-2.png" alt="">
+                        <p>Increase your payment amount anytime</p>
+                    </li>
+                    <li><img src="images/icon/money-3.png" alt="">
+                        <p>Make extra or early payments without fees</p>
+                    </li>
+                    <li><img src="images/icon/money-4.png" alt="">
+                        <p>No fees, hidden or otherwise</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="block-choice">
+            <h2 class="line">
+                WHY LoanOffer is the Smartest Choice?
+            </h2>
+            <div class="row">
+                <div class="one-choice">
+                    <img src="images/icon/choice-1.png" alt="">
+                    <div class="title">
+                        Serious Savings
+                    </div>
+                    <p>
+                        Borrow from $5k-$100k at fixed rates that start at 5.95% APR (with AutoPay)
+                    </p>
+                </div>
+                <div class="one-choice">
+                    <img src="images/icon/choice-2.png" alt="">
+                    <div class="title">
+                        No Fees. No Catch.
+                    </div>
+                    <p>
+                        No origination fees or pre-payment penalties. What you see is what you get.
+                    </p>
+                </div>
+                <div class="one-choice">
+                    <img src="images/icon/choice-3.png" alt="">
+                    <div class="title">
+                        Easy Experience
+                    </div>
+                    <p>
+                        Simple online application and access to live customer support 7 days a week.
+                    </p>
+                </div>
+                <div class="one-choice">
+                    <img src="images/icon/choice-4.png" alt="">
+                    <div class="title">
+                        Community Benefits
+                    </div>
+                    <p>
+                        If you lose your job, we’ll temporarily pause your payments and even assist you in finding a new
+                        job!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-benefit">
+        <div class="one-benefit">
+            <img src="images/img/benefit-1.jpg" alt="">
+            <div class="description">
+                Invest in <br>
+                Your Career
+            </div>
+        </div>
+        <div class="one-benefit">
+            <img src="images/img/benefit-2.jpg" alt="">
+            <div class="description">
+                Pay Off Credit<br>
+                Card Debt
+            </div>
+        </div>
+        <div class="one-benefit">
+            <img src="images/img/benefit-3.jpg" alt="">
+            <div class="description">
+                Take Care of<br>
+                Medical Expenses
+            </div>
+        </div>
+        <div class="one-benefit">
+            <img src="images/img/benefit-4.jpg" alt="">
+            <div class="description">
+                Cover Your<br>
+                Moving Expenses
+            </div>
+        </div>
+        <div class="one-benefit">
+            <img src="images/img/benefit-5.jpg" alt="">
+            <div class="description">
+                Invest in Home<br>
+                Improvements
+            </div>
+        </div>
+        <div class="one-benefit">
+            <img src="images/img/benefit-6.jpg" alt="">
+            <div class="description">
+                Consolidate Other<br>
+                High Interest Loans
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="block-price">
+            <h2 class="line">
+                Personal Loan Comparison
+            </h2>
+            <p class="black">Here’s how LoanOffer Personal Loans compare</p>
+            <div class="blocks-price">
+                <div class="one-block-price">
+                    <div class="title">
+                        LoanOffer
+                    </div>
+                    <div class="subsection static-h">
+                        <p class="black">APR range:</p>
+                        <p>Fixed Rates</p>
+                        <div class="price">5.95% – 12.99%</div>
+                        <p>Variable Rates</p>
+                        <div class="price">4.80% – 11.40%</div>
+                        <p>(with AutoPay)5</p>
+                    </div>
+                    <div class="subsection">
+                        <p class="black">Fees:</p>
+                        <p>No Fees</p>
+                        <p class="black">Term:</p>
+                        <p>3, 5, or 7 years</p>
+                        <p class="black">Amount:</p>
+                        <p>$5,000 – $100,000</p>
+                        <p class="black">Unemployment Protection 4:</p>
+                        <p>Yes</p>
+                    </div>
+                </div>
+                <div class="one-block-price">
+                    <div class="title">
+                        Lending Club
+                    </div>
+                    <div class="subsection static-h">
+                        <p class="black">APR range:</p>
+                        <div class="price">5.99 – 35.96%</div>
+                    </div>
+                    <div class="subsection">
+                        <p class="black">Fees:</p>
+                        <p>1 – 5% Origination Fee</p>
+                        <p class="black">Term:</p>
+                        <p>3 or 5 years</p>
+                        <p class="black">Amount:</p>
+                        <p>$1,000 – $40,000</p>
+                        <p class="black">Unemployment Protection 4:</p>
+                        <p>No</p>
+                    </div>
+                </div>
+                <div class="one-block-price">
+                    <div class="title">
+                        Discover<br>
+                        Personal Loan
+                    </div>
+                    <div class="subsection static-h">
+                        <p class="black">APR range:</p>
+                        <div class="price">6.99 – 29.99%</div>
+                    </div>
+                    <div class="subsection">
+                        <p class="black">Fees:</p>
+                        <p>No Fees</p>
+                        <p class="black">Term:</p>
+                        <p>3, 4, 5, 6, or 7 years</p>
+                        <p class="black">Amount:</p>
+                        <p>$2,500 – $30,000</p>
+                        <p class="black">Unemployment Protection 4:</p>
+                        <p>Yes</p>
+                    </div>
+                </div>
+                <div class="one-block-price">
+                    <div class="title">
+                        Credit Cards
+                    </div>
+                    <div class="subsection static-h">
+                        <p class="black">APR range:</p>
+                        <div class="price">11.96 – 22.56%</div>
+                    </div>
+                    <div class="subsection">
+                        <p class="black">Fees:</p>
+                        <p>3% Balance Transfer Fee</p>
+                        <p class="black">Term:</p>
+                        <p>Rolling</p>
+                        <p class="black">Amount:</p>
+                        <p>Varies</p>
+                        <p class="black">Unemployment Protection 4:</p>
+                        <p>No</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-application">
+        <div class="wrapper">
+            <h2>
+                Fast application.<br>
+                Fast process. So easy.
+            </h2>
+            <p class="line">Apply for a decision in minutes.</p>
+            <div class="steps">
+                <div class="one-step index-counter index-counter__1">
+                    <div class="title">
+                        Find Your Rate
+                    </div>
+                    <p>Get pre-approved online with no fees and no long-term obligations</p>
+                </div>
+                <div class="one-step index-counter index-counter__2">
+                    <div class="title">
+                        Select Your Loan & Apply
+                    </div>
+                    <p>Choose the loan that fits you and complete your application.</p>
+                </div>
+                <div class="one-step index-counter index-counter__3">
+                    <div class="title">
+                        Put your e-signature in<br class="sm-hide">
+                        and receive your money
+                    </div>
+                    <p>Sign your documents and funds will be immediately wired to your account.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="block-testimonials">
+            <h2 class="line">
+                How We Help People
+            </h2>
+            <p>
+                With serious savings, a seamless online application, and unique community benefits, our members have a
+                lot
+                to say about our loans!
+
+            </p>
+            <div class="testimonials row">
+                <div class="one-testimonial">
+                    <div class="block-quote">
+                        <p class="quote">
+                            This has quite possibly been the best experience that I've had—easy application process,
+                            great
+                            rates, and great customer service.
+                        </p>
+                    </div>
+                    <div class="row__aic">
+                        <img src="images/img/person-1.png" alt="">
+                        <div class="col">
+                            <div class="name">
+                                Jane Stephens
+                            </div>
+                            <div class="city">
+                                New York
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-testimonial">
+                    <div class="block-quote">
+                        <p class="quote">
+                            My LoanOffer personal loan will save me thousands of dollars in interest. The application
+                            process was fast and effortless.
+                        </p>
+                    </div>
+                    <div class="row__aic">
+                        <img src="images/img/person-2.png" alt="">
+                        <div class="col">
+                            <div class="name">
+                                Christopher Campbell
+                            </div>
+                            <div class="city">
+                                Minnesota
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-testimonial">
+                    <div class="block-quote">
+                        <p class="quote">
+                            I know I’m making progress and LoanOffer has given me the freedom to invest that money in
+                            other assets.
+                        </p>
+                    </div>
+                    <div class="row__aic">
+                        <img src="images/img/person-3.png" alt="">
+                        <div class="col">
+                            <div class="name">
+                                Adam Devine
+                            </div>
+                            <div class="city">
+                                California
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="white-bg">
+        <div class="wrapper">
+            <div class="questions">
+                <div class="question">
+                    <div class="click-title click-title__first row__aic">
+                        <p>How getting a LoanOffer deal is different from getting into a credit card debt?</p>
+                        <img src="images/icon/plus.png" alt="">
+                    </div>
+                    <p class="hide-text">
+                        As opposed to credit cards' variable rates - our loans have a fixed interest rate. This means on
+                        funding day 1 you'll know your exact monthly payment schedule for the term of the loan!
+                    </p>
+                </div>
+                <div class="question">
+                    <div class="click-title click-title__second row__aic">
+                        <p>Why your interest rates are lower?</p>
+                        <img src="images/icon/plus.png" alt="">
+                    </div>
+                    <p class="hide-text">
+                        As opposed to credit cards’ variable rates – our loans have a fixed interest rate. This means on
+                        funding day 1 you’ll know your exact monthly payment schedule for the term of the loan!</p>
+                </div>
+                <div class="question">
+                    <div class="click-title click-title__third row__aic">
+                        <p>What does "underwriting" mean?</p>
+                        <img src="images/icon/plus.png" alt="">
+                    </div>
+                    <p class="hide-text">
+                        Welcome to our wonderful world. We sincerely hope that each and every user entering our website
+                        will find exactly what he/she is looking for. With advanced features of activating account and
+                        new login widgets, you will definitely have a great experience of using our web page.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="featured">
+        <div class="wrapper">
+            <h2 class="line">
+                As Featured in:
+            </h2>
+            <div class="company row__aic">
+                <img src="images/img/company-1.png" alt="">
+                <img src="images/img/company-2.png" alt="">
+                <img src="images/img/company-3.png" alt="">
+                <img src="images/img/company-4.png" alt="">
+                <img src="images/img/company-5.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="feedback">
+        <div class="wrapper">
+            <div class="right-block">
+                <h2 class="line">
+                    See what LoanOffer Can Offer<br>
+                    You in 2 Minutes
+                </h2>
+                <form action="">
+                    <input type="text" placeholder="First name" class="input-styles">
+                    <input type="text" placeholder="Last name" class="input-styles">
+                    <input type="text" placeholder="State of residence name" class="input-styles">
+                    <input type="text" placeholder="E-mail address" class="input-styles">
+                </form>
+                <p>
+                    By pressing the button below you confirm that you have read, understood and consent to the language
+                    and authorizations outlined in LoanOffer's Electronic Communication Policy, LoanOffer Social Policy,
+                    GLBA Privacy Notice, and Arbitration Agreement. We recommend that you retain a copy for your
+                    reference.
+                </p>
+                <a href="#" class="btn-styles green">Let's Go</a>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+    <h2>Still Have Some Questions Left?<br>
+        Call us for a <span> Free Consultation at 855-456-7634</span></h2>
+</section>
+
+<footer id="footer">
+    <div class="wrapper">
+        <div class="top-footer">
+            <div class="sub-title">
+                Get money management and loan tips here!
+            </div>
+            <div class="row__aic">
+                <div class="logo">
+                    <a href="#"><img src="images/icon/logo-inverse-249x56.png" alt=""></a>
+                </div>
+                <div class="block-subscribe row">
+                    <input type="text" class="input-subscribe" placeholder="Enter E-mail address">
+                    <button type="button" class="btn-subscribe">Subscribe!</button>
+                </div>
+                <ul class="social-network">
+                    <li><a href="#"><img src="images/icon/social-facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="images/icon/social-twitter.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="images/icon/social-google.png" alt="Google"></a></li>
+                    <li><a href="#"><img src="images/icon/social-v.png" alt="V"></a></li>
+                    <li><a href="#"><img src="images/icon/social-yt.png" alt="YouTube"></a></li>
+                    <li><a href="#"><img src="images/icon/social-p.png" alt="P"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p>The loans offered on this website are unsecured personal loans made available by the LoanOffer Bank, an
+                FDIC-insured, New Jersey State chartered bank. Eligibility for a loan is not guaranteed. To get a loan,
+                you must be a US citizen or permanent resident and at least 18 years old (or 19 years old in Alabama).
+                Due to some state legislation obstacles we currently do not accept loan applications from residents of
+                Connecticut, Hawaii, Idaho, Iowa, Maine, Mississippi, Nevada, New York, North Dakota, Tennessee,
+                Vermont, West Virginia, Wisconsin or Wyoming .</p>
+            <p>
+                *We accept loan requests ranging from $2,500 to $35,000 for loans that pay over a 3- or 5-year period.
+                Interest rates on our loans range from 5.99% to 26.99% per year. All loans are subject to credit review
+                and approval. To qualify for the lowest available interest rates, you must have excellent credit and
+                meet other conditions. The availability of the 5-year loan may be limited. Your actual rate depends upon
+                credit score, loan amount, loan term, and credit usage and history. Loans are subject to a
+                non-refundable one-time origination fee ranging from 1 to 5%. The annual percentage rate (APR) includes
+                the interest rate and any origination fee. APRs on our loans range from 6.66% to 29.99%.
+            </p>
+            <p>The total loan amount for a loan includes the amount distributed plus any origination fee. For Colorado
+                and Georgia residents, the total loan amount must exceed $3,000. For Massachusetts residents, the total
+                loan amount must exceed $6,000. For Pennsylvania residents, the total loan amount may not exceed
+                $25,000.</p>
+            <p>
+                Each late payment is subject to a $15 fee. Each payment by check is subject to a $15 processing fee, to
+                the extent permitted by applicable law.
+                Each failed automated withdrawal, returned check or bank draft is subject to a $15 fee. Your bank may
+                also charge you a fee for each failed withdrawal, returned check or bank draft.
+            </p>
+            <p>
+                LoanOffer is the registered service mark of LoanOffer, Inc. © 2015. All rights reserved.
+            </p>
+            <p class="copyright">
+                2019 (с) LoanOffer. All Rights Reserved. <a href="#">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

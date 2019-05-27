@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+}
+body {
+  font-family: 'Poppins', 'Libre Franklin', Helvetica, Arial, sans-serif;
+  background: #fff;
+}
+.wrapper {
+  @include wrapper();
+}
+a {
+  text-decoration: none;
+  color: $white-font;
+}
+input[type=button], button {
+  cursor: pointer;
+  outline: none;
+  box-sizing: border-box;
+}
+input, button, select, textarea {
+  outline: none;
+}
+input[type=text] {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  justify-content:space-between;
+  &__aic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  &__aic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.clear-fix {
+  clear: both;
+}
+.sm-show {
+  display: none;
+  @include sm(display, block)
+}
+.sm-hide {
+  @include sm(display, none !important)
+}
+.bg-banner {
+  background: url(../images/img/bg-banner-1920x1080.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 820px;
+  @include lg(min-height, auto)
+}
+.white-bg {
+  background: $white-bg;
+}
+.btn-styles {
+  width: auto;
+  max-width: 100%;
+  border: 1px solid $green;
+  color: $green;
+  border-radius: 3px;
+  padding: 12px 30px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  transition: .33s all ease;
+  white-space: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  &.green {
+    color: $white-font;
+    background: $green;
+    &:hover, &:focus {
+      color: #000;
+      background: $white-font;
+    }
+  }
+  &:hover, &:focus {
+    background: $green;
+    color: $white-font;
+  }
+}
+.input-styles {
+  width: 100%;
+  box-sizing: border-box;
+  height: 60px;
+  padding: 0 28px;
+  box-shadow: none;
+  border: 1px solid #f8f8f8;
+  min-height: 59px;
+  font-size: 14px;
+  border-radius: 3px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #888;
+  background-color: #f8f8f8;
+  margin-top: 20px;
+}

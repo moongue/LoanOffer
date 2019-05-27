@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins Light'), local('Poppins-Light'), url('../font/poppins/Poppinslight.woff2') format('woff2'), url('../font/poppins/Poppinslight.woff') format('woff'), url('../font/poppins/Poppinslight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins Regular'), local('Poppins-Regular'), url('../font/poppins/Poppinsregular.woff2') format('woff2'), url('../font/poppins/Poppinsregular.woff') format('woff'), url('../font/poppins/Poppinsregular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins Poppins-SemiBoldMedium'), local('Poppins-Medium'), url('../font/poppins/Poppinspoppins-semiboldmedium.woff2') format('woff2'), url('../font/poppins/Poppinspoppins-semiboldmedium.woff') format('woff'), url('../font/poppins/Poppinspoppins-semiboldmedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins Poppins-BoldSemiBold'), local('Poppins-SemiBold'), url('../font/poppins/Poppinspoppins-boldsemibold.woff2') format('woff2'), url('../font/poppins/Poppinspoppins-boldsemibold.woff') format('woff'), url('../font/poppins/Poppinspoppins-boldsemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins Bold'), local('Poppins-Bold'), url('../font/poppins/Poppinsbold.woff2') format('woff2'), url('../font/poppins/Poppinsbold.woff') format('woff'), url('../font/poppins/Poppinsbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  src: local('Libre Franklin'), local('LibreFranklin-Regular'), url('../font/librefranklin/Librefranklin.woff2') format('woff2'), url('../font/librefranklin/Librefranklin.woff') format('woff'), url('../font/librefranklin/Librefranklin.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  src: local('Libre Franklin Bold'), local('LibreFranklin-Bold'), url('../font/librefranklin/Librefranklinbold.woff2') format('woff2'), url('../font/librefranklin/Librefranklinbold.woff') format('woff'), url('../font/librefranklin/Librefranklinbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  src: local('Libre Franklin Light'), local('LibreFranklin-Light'), url('../font/librefranklin/Librefranklinlight.woff2') format('woff2'), url('../font/librefranklin/Librefranklinlight.woff') format('woff'), url('../font/librefranklin/Librefranklinlight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
