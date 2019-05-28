@@ -174,13 +174,12 @@
             color: $white-font;
           }
           &.main-dropdown {
-            &:hover > .down-dropdown{
-              display: block;
-            }
             &.active {
               & > a {
-                background: $green;
-                color: $white-font;
+                @include sm-block() {
+                  background: $green;
+                  color: $white-font;
+                }
               }
               &:after {
                 transform: rotate(180deg);

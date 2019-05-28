@@ -16,6 +16,8 @@
       @include sm(flex-basis, 50%);
       @include xs(flex-basis, 100%);
       img {
+        width: auto;
+        height: 64px;
         @include md(max-width, 48px);
       }
       .title {

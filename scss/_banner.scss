@@ -1,7 +1,10 @@
 #banner {
   padding-top: 170px;
   padding-bottom: 50px;
+  min-height: 100vh;
   text-align: center;
+  display: flex;
+  align-items: center;
   color: $white-font;
   @include sm(padding-top, 120px);
   h1 {

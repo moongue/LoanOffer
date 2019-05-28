@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="plugins/parallax.min.js"></script>
     <script src="js/script.js"></script>
 
     <link rel="stylesheet" href="css/reset.css">
@@ -410,7 +411,9 @@
             </div>
         </div>
     </div>
-    <div class="block-application">
+
+    <div class="block-application parallax-window" data-prallax="scroll"
+         data-image-src="images/img/home-parallax-01.jpg">
         <div class="wrapper">
             <h2>
                 Fast application.<br>
@@ -563,7 +566,7 @@
             </div>
         </div>
     </div>
-    <div class="feedback">
+    <div class="feedback parallax-feedback" data-parallax="scroll" data-image-src="images/img/home-parallax-02.jpg">
         <div class="wrapper">
             <div class="right-block">
                 <h2 class="line">
@@ -571,10 +574,23 @@
                     You in 2 Minutes
                 </h2>
                 <form action="">
-                    <input type="text" placeholder="First name" class="input-styles">
-                    <input type="text" placeholder="Last name" class="input-styles">
-                    <input type="text" placeholder="State of residence name" class="input-styles">
-                    <input type="text" placeholder="E-mail address" class="input-styles">
+                    <div class="input-with-validator">
+                        <input type="text" placeholder="First name" class="input-styles">
+                        <span class="validator">The text field is required.</span>
+                    </div>
+                    <div class="input-with-validator">
+                        <input type="text" placeholder="Last name" class="input-styles">
+
+                        <span class="validator">The text field is required.</span>
+                    </div>
+                    <div class="input-with-validator">
+                        <input type="text" placeholder="State of residence name" class="input-styles">
+                        <span class="validator">The text field is required.</span>
+                    </div>
+                    <div class="input-with-validator">
+                        <input type="text" placeholder="E-mail address" class="input-styles">
+                        <span class="validator">The email is required.</span>
+                    </div>
                 </form>
                 <p>
                     By pressing the button below you confirm that you have read, understood and consent to the language

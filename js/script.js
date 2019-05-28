@@ -83,10 +83,16 @@ function scrollMenu() {
     }
 }
 
+function parallax() {
+    $('.parallax-window').parallax({imageSrc: 'images/img/home-parallax-01.jpg'});
+    $('.parallax-feedback').parallax({imageSrc: 'images/img/home-parallax-02.jpg'});
+}
+
 $(window).on('load', function () {
     accordion();
     accordionMob();
     mobileMenuToggle();
     scrollMenu();
     questions();
+    parallax();
 });

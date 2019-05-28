@@ -89,6 +89,21 @@ input[type=text] {
     color: $white-font;
   }
 }
+.input-with-validator {
+  position: relative;
+  .validator {
+    position: absolute;
+    right: 4px;
+    top: 1px;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0;
+    color: #d9534f;
+    transition: .3s;
+    margin-top: 22px;
+
+  }
+}
 .input-styles {
   width: 100%;
   box-sizing: border-box;
@@ -104,4 +119,20 @@ input[type=text] {
   color: #888;
   background-color: #f8f8f8;
   margin-top: 20px;
+  &:focus::-webkit-input-placeholder {
+    color: transparent;
+    transition: color .3s;
+  }
+  &:focus::-moz-placeholder {
+    color: transparent;
+    transition: color .3s;
+  }
+  &:focus:-moz-placeholder {
+    color: transparent;
+    transition: color .3s;
+  }
+  &:focus:-ms-input-placeholder {
+    color: transparent;
+    transition: color .3s;
+  }
 }

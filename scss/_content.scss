@@ -130,6 +130,8 @@
           }
           img {
             padding-right: 20px;
+            width: 32px;
+            height: auto;
             @include sm(padding, 0 0 20px 0)
           }
           p {
@@ -159,7 +161,7 @@
         width: 100%;
         @include sm(max-width, 100%);
         > img {
-          width: 64px;
+          width: auto;
           height: 63px;
           @include sm-block() {
             width: 48px;
@@ -223,7 +225,7 @@
         color: $white-font;
         opacity: 0;
         visibility: hidden;
-        transform: scale(.6);
+        transform: scale(.9);
         transition: all .3s;
         @include sm(font-size, 24px)
       }
@@ -283,20 +285,21 @@
           color: #3ad88f;
           font-weight: 600;
           line-height: 1.2;
-          font-size: 1.3em;
+          font-size: 1.4em;
+          margin-top: 12px;
         }
       }
     }
   }
   .block-application {
-    background: url(../images/img/home-parallax-01.jpg) no-repeat;
-    background-size: cover;
-    color: $white-font;
     padding: 90px 0;
+    min-height: 400px;
+    background: transparent;
     @include lg(padding, 50px 0);
     margin-top: 50px;
     h2 {
       margin-top: 0;
+      color: $white-font;
     }
     p.line {
       margin-top: 28px;
@@ -371,6 +374,7 @@
           margin-top: 13px;
           font-size: 18px;
           line-height: 1.88889;
+          color: $white-font;
           @include lg(font-size, 16px);
           @include sm-block() {
             font-size: 14px;
@@ -383,6 +387,7 @@
   .block-testimonials {
     h2 + p {
       color: $black;
+      max-width: 928px;
     }
     .testimonials {
       margin-top: 25px;
@@ -444,8 +449,8 @@
               position: absolute;
               background: url(../images/icon/quote.png) no-repeat;
               background-size: cover;
-              width: 39px;
-              height: 31px;
+              width: 30px;
+              height: 23px;
               top: 20px;
               @include sm-block() {
                 width: 30px;
@@ -516,10 +521,8 @@
         @include lg(font-size, 20px);
         @include sm(font-size, 18px);
         img {
-          @include sm-block() {
             width: 24px;
-            height: 24px;
-          }
+            height: auto;
         }
       }
       .hide-text {
@@ -544,10 +547,9 @@
     }
   }
   .feedback {
-    background: url(../images/img/home-parallax-02.jpg) no-repeat;
-    background-size: cover;
-    height: 100%;
     margin-top: 90px;
+    min-height: 400px;
+    background: transparent;
     padding: 100px 0;
     color: #fff;
     @include md-block() {

@@ -221,6 +221,24 @@ input[type=text] {
   color: #fff;
 }
 
+.input-with-validator {
+  position: relative;
+}
+
+.input-with-validator .validator {
+  position: absolute;
+  right: 4px;
+  top: 1px;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0;
+  color: #d9534f;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  margin-top: 22px;
+}
+
 .input-styles {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -238,6 +256,34 @@ input[type=text] {
   color: #888;
   background-color: #f8f8f8;
   margin-top: 20px;
+}
+
+.input-styles:focus::-webkit-input-placeholder {
+  color: transparent;
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+}
+
+.input-styles:focus::-moz-placeholder {
+  color: transparent;
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+}
+
+.input-styles:focus:-moz-placeholder {
+  color: transparent;
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+}
+
+.input-styles:focus:-ms-input-placeholder {
+  color: transparent;
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
 }
 
 #header {
@@ -527,13 +573,11 @@ input[type=text] {
   color: #fff;
 }
 
-#header nav ul li.have-dropdown.main-dropdown:hover > .down-dropdown {
-  display: block;
-}
-
-#header nav ul li.have-dropdown.main-dropdown.active > a {
-  background: #3ad88f;
-  color: #fff;
+@media screen and (max-width: 780px) {
+  #header nav ul li.have-dropdown.main-dropdown.active > a {
+    background: #3ad88f;
+    color: #fff;
+  }
 }
 
 #header nav ul li.have-dropdown.main-dropdown.active:after {
@@ -666,7 +710,14 @@ input[type=text] {
 #banner {
   padding-top: 170px;
   padding-bottom: 50px;
+  min-height: 100vh;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #fff;
 }
 
@@ -842,6 +893,11 @@ input[type=text] {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
   }
+}
+
+#advantages .row .one-advantage img {
+  width: auto;
+  height: 64px;
 }
 
 @media screen and (max-width: 960px) {
@@ -1104,6 +1160,8 @@ input[type=text] {
 
 #content .bg-money .block-right ul li img {
   padding-right: 20px;
+  width: 32px;
+  height: auto;
 }
 
 @media screen and (max-width: 780px) {
@@ -1166,7 +1224,7 @@ input[type=text] {
 }
 
 #content .block-choice .row .one-choice > img {
-  width: 64px;
+  width: auto;
   height: 63px;
 }
 
@@ -1280,9 +1338,9 @@ input[type=text] {
   color: #fff;
   opacity: 0;
   visibility: hidden;
-  -webkit-transform: scale(0.6);
-  -ms-transform: scale(0.6);
-  transform: scale(0.6);
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
@@ -1390,14 +1448,14 @@ input[type=text] {
   color: #3ad88f;
   font-weight: 600;
   line-height: 1.2;
-  font-size: 1.3em;
+  font-size: 1.4em;
+  margin-top: 12px;
 }
 
 #content .block-application {
-  background: url(../images/img/home-parallax-01.jpg) no-repeat;
-  background-size: cover;
-  color: #fff;
   padding: 90px 0;
+  min-height: 400px;
+  background: transparent;
   margin-top: 50px;
 }
 
@@ -1409,6 +1467,7 @@ input[type=text] {
 
 #content .block-application h2 {
   margin-top: 0;
+  color: #fff;
 }
 
 #content .block-application p.line {
@@ -1518,6 +1577,7 @@ input[type=text] {
   margin-top: 13px;
   font-size: 18px;
   line-height: 1.88889;
+  color: #fff;
 }
 
 @media screen and (max-width: 1100px) {
@@ -1535,6 +1595,7 @@ input[type=text] {
 
 #content .block-testimonials h2 + p {
   color: #000;
+  max-width: 928px;
 }
 
 #content .block-testimonials .testimonials {
@@ -1634,8 +1695,8 @@ input[type=text] {
   position: absolute;
   background: url(../images/icon/quote.png) no-repeat;
   background-size: cover;
-  width: 39px;
-  height: 31px;
+  width: 30px;
+  height: 23px;
   top: 20px;
 }
 
@@ -1770,11 +1831,9 @@ input[type=text] {
   }
 }
 
-@media screen and (max-width: 780px) {
-  #content .questions .question .click-title img {
-    width: 24px;
-    height: 24px;
-  }
+#content .questions .question .click-title img {
+  width: 24px;
+  height: auto;
 }
 
 #content .questions .question .hide-text {
@@ -1815,10 +1874,9 @@ input[type=text] {
 }
 
 #content .feedback {
-  background: url(../images/img/home-parallax-02.jpg) no-repeat;
-  background-size: cover;
-  height: 100%;
   margin-top: 90px;
+  min-height: 400px;
+  background: transparent;
   padding: 100px 0;
   color: #fff;
 }
